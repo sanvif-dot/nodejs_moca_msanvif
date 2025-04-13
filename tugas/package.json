@@ -1,0 +1,20 @@
+{
+    "name": "api_automation_test",
+    "version": "1.0.0",
+    "description": "menjalankan pengetesan API secara automation dengan mocha",
+    "type": "module",
+    "scripts": {
+        "run_script": "mocha tests --recursive --timeout 5000 --reporter spec",
+        "produce_report": "mocha tests --recursive --timeout 5000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+    },
+    "dependencies": {
+        "ajv": "^8.12.0",
+        "ajv-formats": "^3.0.1",
+        "node-fetch": "^3.3.1"
+    },
+    "devDependencies": {
+        "chai": "^4.3.8",
+        "mocha": "^10.2.0",
+        "mocha-simple-html-reporter": "^2.0.0"
+    }
+}
